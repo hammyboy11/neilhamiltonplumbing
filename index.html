@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Neil Hamilton Plumbing &amp; Heating</title>
-<meta name="description" content="Professional plumbing, heating and bathroom installations in Oldham and across the North West.">
+<meta name="description" content="Professional plumbing, heating and bathroom installations in Saddleworth and across the North West.">
 <style>
 
 :root{--ink:#151515;--cream:#f4efe7;--copper:#b77b45;--green:#278348;--muted:#6c6862}
@@ -28,15 +28,37 @@ p{font-size:1.08rem;line-height:1.65;color:var(--muted)}a{color:inherit}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.gallery figure{margin:0;background:#111;color:white;position:relative;overflow:hidden;min-height:360px}.gallery img{width:100%;height:100%;object-fit:cover;display:block}.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:42px 18px 18px;background:linear-gradient(transparent,rgba(0,0,0,.84));font:700 1.4rem Georgia,serif}
 .dark{background:#111;color:white}.dark p{color:#c8c3bd}.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.split img{width:100%;max-height:620px;object-fit:cover}
 .list{display:grid;grid-template-columns:1fr 1fr;gap:12px 30px;padding:0;list-style:none}.list li{padding:13px 0;border-bottom:1px solid #d7d0c6;font-weight:700}
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px}.contact-box{background:white;padding:30px}.contact-box a{display:block;margin:12px 0;font-weight:800;text-decoration:none}
+.contact-section{max-width:1180px;margin:auto;padding:82px 24px;background:var(--cream)}
+.contact-heading{max-width:900px;margin-bottom:34px}.contact-heading h1{max-width:820px}.contact-heading p{max-width:790px;font-size:1.22rem}
+.contact-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:start}
+.contact-card,.enquiry-card{background:#fff;border-radius:18px;padding:30px;box-shadow:0 12px 34px rgba(55,42,29,.10);border:1px solid rgba(183,123,69,.12)}
+.contact-row{display:grid;grid-template-columns:66px 1fr;gap:18px;align-items:center;padding:21px 0;border-bottom:1px solid #e4ddd4}.contact-row:last-child{border-bottom:0}
+.contact-icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#f6eee5;color:#b76524;font-size:1.75rem;font-weight:800}
+.contact-row a{font-size:1.18rem;font-weight:800;text-decoration:none;overflow-wrap:anywhere}.contact-row p{margin:0;font-size:1.08rem;color:#4f4b46}.contact-row strong{color:#c86f2c}
+.enquiry-card h2{font-size:2.2rem}.enquiry-card form{margin-top:18px}.enquiry-card input,.enquiry-card textarea{border-radius:10px;border:1px solid #d8cec2}.enquiry-card .btn{border-radius:9px;width:100%}
+
 form{display:grid;gap:14px}input,textarea{width:100%;padding:14px;border:1px solid #c8c0b6;background:#fff;font:inherit}textarea{min-height:150px}button{border:0;cursor:pointer}
 .trust{display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding:18px;background:#111;color:white}.gas{border:1px solid #f0d900;border-left:7px solid #f0d900;padding:10px 14px;font-weight:800}
 footer{background:#0f0f0f;color:white;padding:42px 24px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer p{color:#aaa;margin:.3rem 0}
 .mobile-actions{display:none}
 @media(max-width:800px){
  .header-inner{padding:10px 14px}.brand img{width:58px;height:58px}.brand strong{font-size:1.35rem}.brand span{font-size:.66rem}
- .nav{display:none}.phone{margin-left:auto;font-size:.9rem}.intro,.split,.contact-grid{grid-template-columns:1fr}.cards,.gallery{grid-template-columns:1fr}.gallery figure{min-height:480px}
- .section{padding:58px 20px}.hero{min-height:70vh}.hero-inner{padding:52px 20px 110px}
+ .nav{display:none}.phone{margin-left:auto;font-size:.9rem}.intro,.split,.contact-layout{grid-template-columns:1fr}.cards,.gallery{grid-template-columns:1fr}.gallery figure{min-height:480px}
+ .section{padding:58px 20px}.contact-section{padding:58px 20px}.contact-heading p{font-size:1.08rem}.contact-card,.enquiry-card{padding:22px 18px;border-radius:14px}.contact-row{grid-template-columns:54px 1fr;gap:14px;padding:18px 0}.contact-icon{width:50px;height:50px;font-size:1.45rem}.contact-row a{font-size:1.02rem}.contact-row p{font-size:1rem}.hero{min-height:70vh}.hero-inner{padding:52px 20px 110px}
+ /* Show the complete homepage logo on phones instead of cropping/zooming it. */
+ #home.hero{
+   min-height:760px;
+   background-color:#050505;
+   background-size:96% auto;
+   background-position:center 44%;
+   background-repeat:no-repeat;
+ }
+ #home.hero:before{background:linear-gradient(180deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,.58) 48%,rgba(0,0,0,.94) 100%)}
+ #home .hero-inner{padding:42px 20px 145px;align-self:end}
+ #home .hero-inner h1{font-size:clamp(3rem,13vw,4.8rem);line-height:.9;max-width:95%}
+ #home .hero-inner p{font-size:1.05rem;line-height:1.55;max-width:92%}
+ #home .buttons{margin-top:22px;gap:14px}
+ #home .buttons .btn{width:100%;text-align:center}
  .mobile-actions{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:18px;right:18px;bottom:8px;z-index:60;box-shadow:0 8px 30px rgba(0,0,0,.3)}
  .mobile-actions a{text-align:center;padding:15px 8px;text-decoration:none;color:#fff;font-weight:800;background:var(--copper)}.mobile-actions a:last-child{background:var(--green)}
  body{padding-bottom:96px}
@@ -171,28 +193,42 @@ section[id]{scroll-margin-top:102px}
   </ul>
 </section>
 
-<section id="contact" class="section contact-grid">
-  <div>
+<section id="contact" class="contact-section">
+  <div class="contact-heading">
     <div class="eyebrow">Contact</div>
     <h1>Tell Neil about your project.</h1>
     <p>For quotations, bookings or advice, contact Neil directly by phone, WhatsApp or email.</p>
-    <div class="contact-box">
-      <a href="tel:07813261256">Telephone: 07813 261256</a>
-      <a href="https://wa.me/447813261256">WhatsApp Neil</a>
-      <a href="mailto:Info@neilhamiltonplumbing.co.uk">Info@neilhamiltonplumbing.co.uk</a>
-      <p>Serving Oldham and surrounding areas across the North West.</p>
-    </div>
   </div>
-  <div class="contact-box">
-    <h2>Send an enquiry</h2>
-    <form>
-      <input name="name" placeholder="Your name" required>
-      <input name="email" placeholder="Your email" required type="email">
-      <input name="phone" placeholder="Telephone number">
-      <textarea name="message" placeholder="Tell Neil about the work you need" required></textarea>
-      <button class="btn" type="submit">Email enquiry</button>
-    </form>
-    <p><small>The button opens your email app addressed to Info@neilhamiltonplumbing.co.uk.</small></p>
+  <div class="contact-layout">
+    <div class="contact-card" aria-label="Contact Neil Hamilton Plumbing and Heating">
+      <div class="contact-row">
+        <div class="contact-icon" aria-hidden="true">☎</div>
+        <a href="tel:07813261256">Telephone: 07813 261256</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon" aria-hidden="true">◉</div>
+        <a href="https://wa.me/447813261256">WhatsApp Neil</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon" aria-hidden="true">✉</div>
+        <a href="mailto:Info@neilhamiltonplumbing.co.uk">Info@neilhamiltonplumbing.co.uk</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon" aria-hidden="true">⌖</div>
+        <p>Serving <strong>Saddleworth</strong> and surrounding areas across the North West.</p>
+      </div>
+    </div>
+    <div class="enquiry-card">
+      <h2>Send an enquiry</h2>
+      <form>
+        <input name="name" placeholder="Your name" required>
+        <input name="email" placeholder="Your email" required type="email">
+        <input name="phone" placeholder="Telephone number">
+        <textarea name="message" placeholder="Tell Neil about the work you need" required></textarea>
+        <button class="btn" type="submit">Email enquiry</button>
+      </form>
+      <p><small>The button opens your email app addressed to Info@neilhamiltonplumbing.co.uk.</small></p>
+    </div>
   </div>
 </section>
 
