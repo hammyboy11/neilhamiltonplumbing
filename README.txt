@@ -1,8 +1,12 @@
-NEIL HAMILTON PLUMBING & HEATING — WEBSITE V2
+NEIL HAMILTON PLUMBING & HEATING — IPHONE UPLOAD VERSION
 
-Upload every file and the assets folder to the root of the GitHub repository named neilhamiltonplumbing.
-Do not upload the outer Neil-Hamilton-Website-v2 folder itself.
+This version has NO assets folder. Every image is stored beside index.html,
+so it can be uploaded from an iPhone as individual files.
 
-Netlify will publish automatically after the GitHub commit.
-The enquiry form uses the existing Formspree endpoint.
-The Google Search Console verification tag has been retained.
+Upload every file in this folder to the ROOT of the GitHub repository
+named: neilhamiltonplumbing
+
+Replace files with the same names when GitHub asks.
+Do not upload the ZIP itself.
+
+Netlify will automatically publish after the GitHub commit.
