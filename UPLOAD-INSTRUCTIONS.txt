@@ -1,0 +1,11 @@
+FINAL IMAGE CACHE FIX
+
+Upload every file in this folder to the ROOT of the GitHub repository:
+hammyboy11/neilhamiltonplumbing
+
+Replace the existing files with the same names and commit the changes.
+You do NOT need to upload the image files again.
+
+This update uses root-level image paths and a version code to force Safari
+and Netlify to reload every logo and project image instead of showing old
+cached broken-image results.
